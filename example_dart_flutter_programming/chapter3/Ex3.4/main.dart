@@ -27,7 +27,7 @@ class _FirstStatefulWidget extends StatefulWidget {
 }
 
 class _FirstStatefulWidgetState extends State<_FirstStatefulWidget> {
-  int _counter;
+  int _counter = 0;
 
   _FirstStatefulWidgetState() {
     print('_FirstStatefulWidgetState() ${this.mounted}');
@@ -122,7 +122,7 @@ class _SecondStatefulWidget extends StatefulWidget {
 }
 
 class _SecondStatefulWidgetState extends State<_SecondStatefulWidget> {
-  int _counter;
+  int _counter = 0;
 
   _SecondStatefulWidgetState() {
     print('_SecondStatefulWidgetState() ${this.mounted}');
