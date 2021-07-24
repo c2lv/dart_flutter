@@ -74,7 +74,7 @@ class WidgetDemoState extends State<WidgetDemo> {
   }
 
   Widget getPage() {
-    Widget page;
+    dynamic page;
     switch (_curIndex) {
       case 0:
         page = page1();

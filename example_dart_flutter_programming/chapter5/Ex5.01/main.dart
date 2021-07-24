@@ -12,7 +12,7 @@ class WidgetDemo extends StatelessWidget {
           title: const Text('Container Demo'),
         ),
         body: Row(
-            mainAxisSize: MainAxisSize.max,
+            mainAxisSize: MainAxisSize.max, // max: 남은 공간 모두 사용, min: 위젯의 크기만큼만 사용
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
