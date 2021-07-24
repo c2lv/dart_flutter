@@ -16,6 +16,7 @@ class WidgetDemo extends StatelessWidget {
             onPressed: () {
               /*do something...*/
             },
+            // onPressed: null, // 버튼 비활성화 상태로 터치 불가능(모든 버튼 위젯 해당)
             child: Text(
               'Flat Button',
               style: TextStyle(fontSize: 20.0),

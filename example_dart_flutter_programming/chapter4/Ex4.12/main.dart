@@ -9,7 +9,7 @@ class _CheckboxDemo extends StatefulWidget {
 }
 
 class _CheckboxDemoState extends State<_CheckboxDemo> {
-  var _isChecked = false;
+  dynamic _isChecked = false;
 
   @override
   Widget build(BuildContext context) {

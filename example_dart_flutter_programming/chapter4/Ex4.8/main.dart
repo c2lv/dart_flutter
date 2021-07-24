@@ -8,7 +8,7 @@ class WidgetDemo extends StatefulWidget {
 }
 
 class WidgetDemoState extends State<WidgetDemo> {
-  String dropdownValue = 'Apple';
+  String? dropdownValue = 'Apple';
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class WidgetDemoState extends State<WidgetDemo> {
               height: 2,
               color: Colors.cyan,
             ),
-            onChanged: (String newValue) {
+            onChanged: (String? newValue) {
               setState(() {
                 dropdownValue = newValue;
               });

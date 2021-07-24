@@ -20,7 +20,7 @@ class ShowDatePicker extends StatefulWidget {
 }
 
 class ShowDatePickerState extends State<ShowDatePicker> {
-  DateTime _selectedDate;
+  DateTime? _selectedDate;
 
   @override
   Widget build(BuildContext context) {
@@ -35,12 +35,12 @@ class ShowDatePickerState extends State<ShowDatePicker> {
               RaisedButton(
                 child: Text('Show DatePicker'),
                 onPressed: () {
-                  Future<DateTime> selectedDate = showDatePicker(
+                  Future<DateTime?> selectedDate = showDatePicker(
                     context: context,
                     initialDate: DateTime.now(),
                     firstDate: DateTime(1900),
                     lastDate: DateTime(2999),
-                    builder: (BuildContext context, Widget child) {
+                    builder: (BuildContext context, dynamic child) {
                       return Theme(
                         data: ThemeData.dark(),
                         child: child,
@@ -55,8 +55,8 @@ class ShowDatePickerState extends State<ShowDatePicker> {
                 },
               ),
               if (_selectedDate != null)
-                Text('${_selectedDate.year}-${_selectedDate
-                    .month}-${_selectedDate.day}'),
+                Text('${_selectedDate!.year}-${_selectedDate
+                    !.month}-${_selectedDate!.day}'),
             ],
           )),
     );

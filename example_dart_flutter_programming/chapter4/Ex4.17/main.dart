@@ -20,7 +20,7 @@ class ShowTimePicker extends StatefulWidget {
 }
 
 class ShowTimePickerState extends State<ShowTimePicker> {
-  TimeOfDay _selectedTime;
+  TimeOfDay? _selectedTime;
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class ShowTimePickerState extends State<ShowTimePicker> {
               RaisedButton(
                 child: Text('Show TimePicker'),
                 onPressed: () {
-                  Future<TimeOfDay> selectedTime = showTimePicker(
+                  Future<TimeOfDay?> selectedTime = showTimePicker(
                     initialTime: TimeOfDay.now(),
                     context: context,
                   );
@@ -47,7 +47,7 @@ class ShowTimePickerState extends State<ShowTimePicker> {
                 },
               ),
               if (_selectedTime != null)
-                Text('${_selectedTime.hour}:${_selectedTime.minute}'),
+                Text('${_selectedTime!.hour}:${_selectedTime!.minute}'),
             ],
           )),
     );

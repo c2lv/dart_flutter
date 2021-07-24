@@ -29,19 +29,29 @@ class _SwitchDemoState extends State<_SwitchDemo> {
                 leading: Radio(
                   value: Fruit.APPLE,
                   groupValue: _fruit,
-                  onChanged: (value) {
+                  onChanged: (dynamic value) {
                     setState(() {
                       _fruit = value;
                     });
                   },
                 ),
               ),
+              // RadioListTile(
+              //     title: Text('사과'),
+              //     value: Fruit.APPLE,
+              //     groupValue: _fruit,
+              //     onChanged: (dynamic value) {
+              //       setState(() {
+              //         _fruit = value;
+              //       });
+              //     },
+              // ),
               ListTile(
-                title: Text('바나나'),
-                leading: Radio(
+                  title: Text('바나나'),
+                  leading: Radio(
                   value: Fruit.BANANA,
                   groupValue: _fruit,
-                  onChanged: (value) {
+                  onChanged: (dynamic value) {
                     setState(() {
                       _fruit = value;
                     });
