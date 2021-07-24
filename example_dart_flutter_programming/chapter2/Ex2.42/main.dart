@@ -1,7 +1,9 @@
-import 'package:dartEx01/src/Person.dart';
+import 'package:android_flutter/src/Person.dart';
 
 main() {
   Person p = Person();
   p.eat();
 //  p._sleep(); error
+  print('${p.name}');
+//  print('${p._age}'); error
 }

@@ -1,5 +1,6 @@
 main() {
   Employee employee = Employee()
+  // 캐스케이드 표기법(..) 사용
     ..name = 'Kim'
     ..setAge(25)
     ..showInfo();
@@ -11,7 +12,7 @@ main() {
 
 class Employee {
   var name = 'employee';
-  int age;
+  var age;
 
   setAge(int age) {
     this.age = age;

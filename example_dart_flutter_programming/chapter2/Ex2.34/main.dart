@@ -3,8 +3,8 @@ main() {
 }
 
 class Person {
-  String name;
-  int age;
+  String? name;
+  int? age;
 
   Person.init(String name) {
     print('This is Person($name) Constructor!');

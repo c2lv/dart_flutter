@@ -6,9 +6,9 @@ main() {
 }
 
 class Person {
-  String _name;
+  String? _name;
 
-  String get name => (_name == null) ? 'Lee' : _name;
+  String? get name => (_name == null) ? 'Lee' : _name;
 
-  set name(String name) => (name == null) ? _name = 'Park' : _name = name;
+  set name(String? name) => (name == null) ? _name = 'Park' : _name = name;
 }

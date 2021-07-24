@@ -5,8 +5,8 @@ main() {
 }
 
 class Person {
-  String name;
-  int age;
+  String? name;
+  int? age;
 
   getName() {
     return name;

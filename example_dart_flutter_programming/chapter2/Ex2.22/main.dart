@@ -23,6 +23,12 @@ main() {
   } else {
     print('employee is not Student');
   }
+
+  if (employee is Person) {
+    print('employee is Person');
+  } else {
+    print('employee is not Person');
+  }
 }
 
 class Person {

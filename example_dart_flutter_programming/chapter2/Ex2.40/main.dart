@@ -16,6 +16,7 @@ class Person {
       case 'Employee':
         return Employee();
     }
+    throw '';
   }
 
   String getType() {
@@ -40,3 +41,6 @@ class Employee extends Person {
     return 'Employee';
   }
 }
+// 팩토리 생성자는 팩토리 패턴을 사용하기 편리하다.
+// 팩토리 패턴을 사용하면 해당 클래스의 인스턴스를 매번 생성하지 않아도 된다.
+// 보통 자식 클래스의 인스턴스를 리턴 받는다.
