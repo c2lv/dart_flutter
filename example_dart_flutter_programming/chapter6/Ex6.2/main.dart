@@ -30,14 +30,14 @@ class FirstPageState extends State<FirstPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Center(
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: () async {
                   await Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => SecondPage(
-                              data: '(request)',
-                            )),
+                          data: '(request)',
+                        )),
                   ).then((value) {
                     setState(() {
                       result = value;
@@ -56,7 +56,7 @@ class FirstPageState extends State<FirstPage> {
 class SecondPage extends StatelessWidget {
   final String data;
 
-  SecondPage({@required this.data});
+  SecondPage({required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +68,7 @@ class SecondPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Center(
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context, '(result)');
                 },

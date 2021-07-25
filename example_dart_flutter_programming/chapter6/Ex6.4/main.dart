@@ -10,6 +10,8 @@ class StateDemo extends StatelessWidget {
       providers: [
         Provider<String>.value(value: 'Shared Data'),
         Provider<int>.value(value: 100),
+        // Provider 에 같은 int 형이 2개 있다면 가장 하단에 있는 Provider 가 사용된다.
+        // Provider<int>.value(value: 200),
       ],
       child: MaterialApp(
           title: 'Flutter Demo App',
