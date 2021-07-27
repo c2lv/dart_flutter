@@ -9,7 +9,7 @@ class WidgetDemo extends StatefulWidget {
 
 class WidgetDemoState extends State<WidgetDemo>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   void initState() {
@@ -41,9 +41,9 @@ class WidgetDemoState extends State<WidgetDemo>
             child: IconButton(
               iconSize: 200.0,
               color: Colors.blue,
-              icon: Icon(Icons.sentiment_satisfied),
+              icon: Icon(Icons.sentiment_satisfied_alt),
               onPressed: () {
-                if (_controller.duration.inSeconds == 1) {
+                if (_controller.duration!.inSeconds == 1) {
                   _controller.duration = const Duration(seconds: 3);
                 } else {
                   _controller.duration = const Duration(seconds: 1);

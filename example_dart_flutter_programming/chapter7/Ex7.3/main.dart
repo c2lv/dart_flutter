@@ -22,7 +22,7 @@ class WidgetDemoState extends State<WidgetDemo> {
             child: TweenAnimationBuilder(
               tween: Tween<double>(begin: 0, end: sizeValue),
               duration: Duration(seconds: 1),
-              builder: (BuildContext context, double size, Widget childWidget) {
+              builder: (BuildContext context, double size, dynamic childWidget) {
                 return IconButton(
                   iconSize: size,
                   color: Colors.blue,
@@ -34,7 +34,7 @@ class WidgetDemoState extends State<WidgetDemo> {
                   },
                 );
               },
-              child: Icon(Icons.sentiment_satisfied),
+              child: Icon(Icons.sentiment_satisfied_alt),
             ),
           )),
     );

@@ -27,7 +27,7 @@ class FirstPage extends StatelessWidget {
         child: Hero(
           tag: 'icon',
           child: Icon(
-            Icons.sentiment_satisfied,
+            Icons.sentiment_satisfied_alt,
             size: 100.0,
             color: Colors.blue,
           ),
@@ -52,7 +52,7 @@ class SecondPage extends StatelessWidget {
           child: Hero(
             tag: 'icon',
             child: Icon(
-              Icons.sentiment_satisfied,
+              Icons.sentiment_satisfied_alt,
               size: 200.0,
               color: Colors.blue,
             ),
